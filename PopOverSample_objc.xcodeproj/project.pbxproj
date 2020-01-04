@@ -14,6 +14,7 @@
 		5ECF5CBC23C0D6DF0031DEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF5CBB23C0D6DF0031DEF4 /* Assets.xcassets */; };
 		5ECF5CBF23C0D6DF0031DEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECF5CBD23C0D6DF0031DEF4 /* LaunchScreen.storyboard */; };
 		5ECF5CC223C0D6DF0031DEF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF5CC123C0D6DF0031DEF4 /* main.m */; };
+		5ECF5CC923C0D9250031DEF4 /* HogeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECF5CC823C0D9250031DEF4 /* HogeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5ECF5CBE23C0D6DF0031DEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ECF5CC023C0D6DF0031DEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECF5CC123C0D6DF0031DEF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5ECF5CC823C0D9250031DEF4 /* HogeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HogeViewController.m; sourceTree = "<group>"; };
+		5ECF5CCA23C0D9390031DEF4 /* HogeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HogeViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				5ECF5CB323C0D6DE0031DEF4 /* SceneDelegate.m */,
 				5ECF5CB523C0D6DE0031DEF4 /* ViewController.h */,
 				5ECF5CB623C0D6DE0031DEF4 /* ViewController.m */,
+				5ECF5CCA23C0D9390031DEF4 /* HogeViewController.h */,
+				5ECF5CC823C0D9250031DEF4 /* HogeViewController.m */,
 				5ECF5CB823C0D6DE0031DEF4 /* Main.storyboard */,
 				5ECF5CBB23C0D6DF0031DEF4 /* Assets.xcassets */,
 				5ECF5CBD23C0D6DF0031DEF4 /* LaunchScreen.storyboard */,
@@ -149,6 +154,7 @@
 				5ECF5CB723C0D6DE0031DEF4 /* ViewController.m in Sources */,
 				5ECF5CB123C0D6DE0031DEF4 /* AppDelegate.m in Sources */,
 				5ECF5CC223C0D6DF0031DEF4 /* main.m in Sources */,
+				5ECF5CC923C0D9250031DEF4 /* HogeViewController.m in Sources */,
 				5ECF5CB423C0D6DE0031DEF4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
