@@ -19,11 +19,19 @@
     [super viewDidLoad];
 }
 
-- (IBAction)buttonDidPush:(id)sender
-{
-    HogeViewController *hogeViewController = [[HogeViewController alloc] init];
-    [self presentPopOverWithViewController:hogeViewController sourceView:_button];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]){
+        HogeViewController *hogeViewController = [[HogeViewController alloc] init];
+        [self presentPopOverWithViewController:hogeViewController sourceView:_searchbar];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+        NSLog(@"初回起動");
+    } else {
+        NSLog(@"初回起動ではない");
+    }
 }
+
 
 - (void)presentPopOverWithViewController:(UIViewController *)viewController sourceView:(UIView *)sourceView
 {

@@ -10,9 +10,8 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet UIButton *button;
+@property (nonatomic, retain) IBOutlet UISearchBar *searchbar;
 
-- (IBAction)buttonDidPush:(id)sender;
 - (void)presentPopOverWithViewController:(UIViewController *)viewController sourceView:(UIView *)sourceView;
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller;
 
