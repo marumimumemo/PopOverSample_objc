@@ -36,13 +36,16 @@
 - (void)presentPopOverWithViewController:(UIViewController *)viewController sourceView:(UIView *)sourceView
 {
     viewController.modalPresentationStyle = UIModalPresentationPopover;
-    viewController.preferredContentSize = CGSizeMake(100.0, 100.0);
+    viewController.preferredContentSize = CGSizeMake(300, 50);
 
     UIPopoverPresentationController *presentationController = viewController.popoverPresentationController;
     presentationController.delegate = self;
     presentationController.permittedArrowDirections = UIPopoverArrowDirectionUp;
     presentationController.sourceView = sourceView;
     presentationController.sourceRect = sourceView.bounds;
+    UIColor *color = [UIColor blackColor];
+    UIColor *acolor = [color colorWithAlphaComponent:0.5];
+    presentationController.backgroundColor = acolor;
 
     [self presentViewController:viewController animated:YES completion:NULL];
 }
