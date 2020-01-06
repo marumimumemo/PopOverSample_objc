@@ -37,6 +37,14 @@
 {
     viewController.modalPresentationStyle = UIModalPresentationPopover;
     viewController.preferredContentSize = CGSizeMake(300, 50);
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 100, 250, 100);
+    label.text = @"まずはエリア、時給、職種などを設定";
+    label.textColor = UIColor.whiteColor;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont boldSystemFontOfSize:15];
+    [viewController.view addSubview: label];
 
     UIPopoverPresentationController *presentationController = viewController.popoverPresentationController;
     presentationController.delegate = self;
